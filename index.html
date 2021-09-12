@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Ashar Rahman</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyAe1VrFLwK4JGVDy2xJ8EUo8BhR6NGeSOQ",
+                authDomain: "ashar-rahman.firebaseapp.com",
+                projectId: "ashar-rahman",
+                storageBucket: "ashar-rahman.appspot.com",
+                messagingSenderId: "781657188224",
+                appId: "1:781657188224:web:f660f0bc024511a62e0365"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+        </script>
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">A/R</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <!-- for the selection bar-->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/aboutme.html" class="navbar__links">
+                        About Me
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/projects.html" class="navbar__links">
+                        Projects
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/contact.html" class="button">
+                        Contact Me
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    <script src="app.js"></script>
+    </body>
+</html>
