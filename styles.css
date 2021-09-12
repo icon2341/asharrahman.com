@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -29,7 +30,7 @@
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    max-width: 100%;
     /*NOTE, if i only do two numbers, it will pair the first number to top/bottom and second to left/right*/
     margin: 0 auto;
     padding: 0 50px;
@@ -122,6 +123,25 @@
 }
 .navbar__links:active{
     color: deepskyblue;
+}
+
+
+.landing__container{
+    background: #8c8c8c linear-gradient(to top, #cbcbcb 0%, #ffffff 100%);
+    height: 100vh;
+}
+
+
+
+.heading__text{
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 10%;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /*When the threshold of 960px is hit the site will change to mobile*/
@@ -221,56 +241,12 @@
     }
 
     .heading__text{
-        border-right: solid 3px rgba(0, 0, 0, 0.75);
-        position: absolute;
-        font-size: 10vh;
-        top: 40%;
-        left: 10%;
-        justify-content: center;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: animated-text 4s steps(29,end) 1s 1 normal both,
-        animated-cursor 600ms steps(29,end) infinite;
+        font-size: 8vw;
     }
-
     
 }
 
 
-.landing__container{
-    background: #8c8c8c linear-gradient(to top, #cbcbcb 0%, #ffffff 100%);
-    min-height: 100vh;
-    max-height: 200vh;
-}
-
-
-
-.heading__text{
-    border-right: solid 3px rgba(0, 0, 0, 0.75);
-    position: absolute;
-    font-size: 10vh;
-    top: 40%;
-    left: 10%;
-    justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: animated-text 4s steps(29,end) 1s 1 normal both,
-    animated-cursor 600ms steps(29,end) infinite;
-}
-
-/* text animation */
-
-@keyframes animated-text{
-    from{width: 0;}
-    to{width: 70%;}
-}
-
-/* cursor animations */
-
-@keyframes animated-cursor{
-    from{border-right-color: rgba(0, 0, 0, 0.75);}
-    to{border-right-color: transparent;}
-}
 
 
 
