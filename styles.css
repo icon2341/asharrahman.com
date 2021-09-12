@@ -10,7 +10,6 @@
     background: #131313;
     height: 80px;
     /*changes the positioning to place it to the right of the element*/
-
     display: flex;
     /*allows you to set alignment of items inside grid*/
     justify-content: center;
@@ -67,6 +66,8 @@
 .navbar__item{
     height: 80px;
 }
+
+
 
 .navbar__links{
     color: white;
@@ -218,8 +219,60 @@
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .heading__text{
+        border-right: solid 3px rgba(0, 0, 0, 0.75);
+        position: absolute;
+        font-size: 10vh;
+        top: 40%;
+        left: 10%;
+        justify-content: center;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: animated-text 4s steps(29,end) 1s 1 normal both,
+        animated-cursor 600ms steps(29,end) infinite;
+    }
+
     
 }
+
+
+.landing__container{
+    background: #8c8c8c linear-gradient(to top, #cbcbcb 0%, #ffffff 100%);
+    min-height: 100vh;
+    max-height: 200vh;
+}
+
+
+
+.heading__text{
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    font-size: 10vh;
+    top: 40%;
+    left: 10%;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 70%;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+}
+
+
 
 
 
